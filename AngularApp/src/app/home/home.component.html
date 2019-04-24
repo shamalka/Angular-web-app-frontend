@@ -1,0 +1,8 @@
+<h1 [class.gray]="HeaderStyle">{{ HomeTitle }}</h1>
+
+<ul *ngIf="ToDos">
+    <li *ngFor="let todo of ToDos">
+        <p>{{ todo.title }} {{ todo.completed }}</p>
+        
+    </li>
+</ul>
